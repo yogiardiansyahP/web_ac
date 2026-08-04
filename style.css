@@ -8,11 +8,21 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #7288AE;
+     background:#1E1C1F;
+    color:white;
     background-size: cover;
     min-height: 100vh;
     color: white;
     font-family: Arial, sans-serif;
+    background-image:
+    repeating-radial-gradient(
+        circle at top left,
+        transparent 0,
+        transparent 180px,
+        rgba(255,255,255,.04) 181px,
+        transparent 182px
+    );
+    overflow-x: hidden;
 }
 
 
@@ -33,6 +43,7 @@ body {
     border-bottom-right-radius: 22px;
 
     box-sizing: border-box;
+    position: relative;
 }
 
 
@@ -84,7 +95,9 @@ body {
 .hero{
     position:relative;
     width:1000px;
+    max-width:100%;
     height:500px;
+    margin:0 auto;
 }
 
 
@@ -93,12 +106,12 @@ body {
 
     position:absolute;
     top:40px;
-    left:900px;
+    left:500px;
 
     width:820px;
     height:620px;
 
-    background:#efe3c7;
+    background:#32170E;
 
     display:flex;
     justify-content:space-between;
@@ -219,6 +232,8 @@ body {
     display:flex;
 
     justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
 
 }
 
@@ -318,6 +333,7 @@ body {
     flex:0 0 auto;
 
     width:900px;
+    max-width:85vw;
     height:520px;
 
     object-fit:cover;
@@ -341,6 +357,7 @@ body {
     font-size:45px;
 
     cursor:pointer;
+    z-index:2;
 
 }
 
@@ -383,4 +400,546 @@ body {
 
     background:#9eb8e5;
 
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ======================= */
+
+.advantages{
+
+    padding:120px 0;
+
+}
+
+.advantages h2{
+
+    font-size:55px;
+    margin-bottom:60px;
+
+}
+
+.advantages-content{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+
+}
+
+.advantages img{
+
+    width:550px;
+    max-width:100%;
+    height:320px;
+
+    border-radius:25px;
+    object-fit:cover;
+
+}
+
+.advantages-text{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+    font-size:18px;
+    line-height:30px;
+
+}
+
+.advantages button{
+
+    display:block;
+
+    margin:60px auto 0;
+
+    padding:14px 45px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#6B84B8;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+/* ======================= */
+
+.about{
+
+    padding:120px 0;
+
+}
+
+.about-box{
+
+    background:#32170E;
+
+    border-radius:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:70px;
+    flex-wrap:wrap;
+    gap:60px;
+
+}
+
+.about-left{
+
+    width:45%;
+
+}
+
+.about-left h2{
+
+    font-size:55px;
+    margin-bottom:30px;
+
+}
+
+.about-left p{
+
+    line-height:35px;
+
+    color:#ddd;
+
+}
+
+.about-right{
+
+    width:40%;
+
+    position:relative;
+
+}
+
+.img-big{
+
+    width:280px;
+    height:350px;
+
+    border-radius:20px;
+
+    object-fit:cover;
+
+}
+
+.img-small{
+
+    width:120px;
+    height:120px;
+
+    border-radius:20px;
+
+    object-fit:cover;
+
+    position:absolute;
+
+}
+
+.top{
+
+    top:-20px;
+    right:-30px;
+
+}
+
+.bottom{
+
+    bottom:-20px;
+    left:-40px;
+
+}
+
+/* ======================= */
+
+.contact{
+
+    padding:120px 0;
+
+}
+
+.contact h2{
+
+    text-align:center;
+
+    font-size:60px;
+
+    margin-bottom:70px;
+
+}
+
+.contact-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:80px;
+    flex-wrap:wrap;
+
+}
+
+form{
+
+    width:45%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+input,
+textarea{
+
+    padding:18px;
+
+    border-radius:20px;
+
+    border:2px solid #6B84B8;
+
+    background:transparent;
+
+    color:rgb(131, 129, 129);
+
+    font-size:16px;
+    width:100%;
+
+}
+
+textarea{
+
+    height:170px;
+
+    resize:none;
+
+}
+
+form button{
+
+    width:170px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#6B84B8;
+
+    color:white;
+
+}
+
+.contact-text{
+
+    width:40%;
+
+}
+
+.contact-text p{
+
+    line-height:35px;
+
+    margin-bottom:40px;
+
+}
+
+.contact-text img,
+.contact-text iframe{
+
+    width:100%;
+    max-width:280px;
+    border-radius:16px;
+
+}
+
+/* ======================= */
+
+footer{
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    padding:35px 0;
+
+}
+
+.footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    text-align:center;
+
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity .9s ease, transform .9s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal:nth-child(1){ transition-delay: 0.1s; }
+.reveal:nth-child(2){ transition-delay: 0.2s; }
+.reveal:nth-child(3){ transition-delay: 0.3s; }
+.reveal:nth-child(4){ transition-delay: 0.4s; }
+.reveal:nth-child(5){ transition-delay: 0.5s; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* ---------- Tablet (<=1024px) ---------- */
+@media (max-width: 1024px) {
+
+    .nav_container{
+        padding:0 25px;
+    }
+
+    .navbar_content{
+        gap:30px;
+    }
+
+    .hero{
+        width:100%;
+        height:auto;
+        min-height:560px;
+    }
+
+    .hero-card{
+        position:relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:auto;
+        flex-wrap:wrap;
+        padding:35px;
+        gap:30px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:44px;
+        line-height:50px;
+    }
+
+    .hero-gallery{
+        width:100%;
+    }
+
+    .img2{
+        margin-top:0;
+    }
+
+    .material h1,
+    .gallery h1,
+    .advantages h2,
+    .about-left h2,
+    .contact h2{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .wood-wrapper{
+        justify-content:flex-start;
+    }
+
+    .card{
+        width:calc(50% - 20px);
+    }
+
+    .advantages img{
+        width:100%;
+    }
+
+    .about-left,
+    .about-right{
+        width:100%;
+    }
+
+    .about-box{
+        padding:45px;
+    }
+
+    form,
+    .contact-text{
+        width:100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .nav_container{
+        height:auto;
+        flex-wrap:wrap;
+        padding:15px 20px;
+    }
+
+    .logo h4{
+        font-size:30px;
+    }
+
+    .navbar_content{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:18px;
+        margin-top:15px;
+    }
+
+    .navbar_content.show{
+        display:flex;
+    }
+
+    .hamburger{
+        display:block;
+    }
+
+    .hero-card{
+        padding:25px;
+    }
+
+    .hero-text h1{
+        font-size:32px;
+        line-height:38px;
+    }
+
+    .hero-gallery{
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+    }
+
+    .img1{
+        width:90px!important;
+        height:90px!important;
+    }
+
+    .material,
+    .gallery,
+    .advantages,
+    .about,
+    .contact{
+        padding:60px 0;
+    }
+
+    .material h1,
+    .gallery h1,
+    .advantages h2,
+    .about-left h2,
+    .contact h2{
+        font-size:32px;
+        margin-bottom:35px;
+    }
+
+    .wood-wrapper{
+        gap:30px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .slider img{
+        height:280px;
+    }
+
+    .prev,
+    .next{
+        display:none;
+    }
+
+    .advantages-content{
+        gap:30px;
+    }
+
+    .advantages img{
+        height:220px;
+    }
+
+    .about-box{
+        padding:30px;
+        border-radius:20px;
+    }
+
+    .img-big{
+        width:100%;
+        height:auto;
+        aspect-ratio:4/5;
+    }
+
+    .img-small{
+        display:none;
+    }
+
+    .contact-content{
+        gap:40px;
+    }
+
+    form button{
+        width:100%;
+    }
+
+    .footer{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-text h1{
+        font-size:26px;
+        line-height:32px;
+    }
+
+    .material h1,
+    .gallery h1,
+    .advantages h2,
+    .about-left h2,
+    .contact h2{
+        font-size:26px;
+    }
+
+    .hero-gallery{
+        grid-template-columns:1fr;
+    }
+
+    .img1{
+        justify-self:start;
+    }
 }
