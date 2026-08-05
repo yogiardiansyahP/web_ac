@@ -85,7 +85,7 @@ body {
 
 .hamburger {
     display: none;
-    color: #ffb22c;
+    color: #ffffff;
     font-size: 30px;
     cursor: pointer;
     user-select: none;
@@ -870,7 +870,8 @@ footer{
     }
 
     .slider img{
-        height:280px;
+        height:200px;
+        justify-content: center;
     }
 
     .prev,
