@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DY AC</title>
+    <title>DY Service</title>
     <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,12 +21,12 @@
             <p>JAKARTA . EST . 2020</p>
         </div>
         <div class="navbar_content">
-            <div class="navbar_content1">Beranda</div>
-            <div class="navbar_content2">Tentang Kami</div>
-            <div class="navbar_content3">Layanan</div>
-            <div class="navbar_content4">Testimoni</div>
-            <div class="navbar_content6">FAQ</div>
-            <div class="navbar_content6">Kontak</div>
+            <a href="#hero" class="navbar_content1">Beranda</a>
+            <a href="#about" style="text-decoration: none; color: white;" class="navbar_content2">Tentang Kami</a>
+            <a href="#material" style="text-decoration: none; color: white;" class="navbar_content3">Layanan</a>
+            <a href="#galeri" style="text-decoration: none; color: white;" class="navbar_content4">Dokumentasi</a>
+            <a href="#kontak" style="text-decoration: none; color: white;" class="navbar_content6">Kontak</a>
+            
         </div>
         <div class="hamburger">
             ☰
@@ -34,7 +34,7 @@
     </nav>
 
 
-<section class="hero reveal">
+<section class="hero reveal" id="hero">
 
     <div class="left-bg"></div>
 
@@ -44,11 +44,11 @@
 
             <h1>
                 PROFESSIONAL <br>
-                AC <br>
+                AC dan Listrik <br>
                 SERVICES
             </h1>
 
-            <p>SOLUSI AC </p>
+            <p>SOLUSI AC Dan Listrik </p>
 
             <button>Pesan</button>
 
@@ -57,21 +57,21 @@
         <div class="hero-gallery">
 
             <img src="asset/image/service.jpeg" class="img1">
-            <img src="asset/image/service.jpeg" class="img2">
+            <img src="asset/image/hero_2.jpeg" class="img2">
             <img src="asset/image/service.jpeg" class="img3">
 
         </div>
-
+        
     </div>
 
 </section>
 
-    <section class="material reveal">
+    <section class="material reveal" id="material">
 
     <div class="container">
 
         <h1>
-            JENIS AC YANG <br>
+            YANG 
             KAMI TANGANI
         </h1>
 
@@ -95,28 +95,16 @@
             <div class="card">
 
                 <img src="img/ac-cassette.jpg">
-
-                <h3>AC Cassette</h3>
+                <h3>Instalasi Listrik</h3>
 
                 <ul>
-                    <li class="good">Distribusi udara merata</li>
-                    <li class="bad">Perlu instalasi plafon khusus</li>
+                    <li class="good">Sesuai standar keamanan kelistrikan (SNI/PLN)</li>
+                    <li class="bad">Perlu survei lokasi terlebih dahulu</li>
                 </ul>
 
             </div>
 
-            <div class="card">
-
-                <img src="img/ac-standing.jpg">
-
-                <h3>AC Standing Floor</h3>
-
-                <ul>
-                    <li class="good">Daya dingin kuat untuk ruangan luas</li>
-                    <li class="bad">Ukuran unit lebih besar</li>
-                </ul>
-
-            </div>
+            
 
         </div>
 
@@ -126,7 +114,7 @@
 
 </section>
 
-<section class="gallery reveal">
+<section class="gallery reveal" id="galeri">
 
     <div class="container">
 
@@ -144,11 +132,7 @@
 <button class="prev">&#10094;</button>
 <button class="next">&#10095;</button>
 
-        <div class="dot">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-        </div>
+        
 
     </div>
 
@@ -183,17 +167,17 @@
 </section>
 
 
-<section class="about reveal">
+<section class="about reveal" id="about">
 
     <div class="container about-box">
 
         <div class="about-left">
 
-            <h2>ABOUT US</h2>
+            <h2>Tentang Kami</h2>
 
             <p>
-                Kami adalah penyedia jasa service AC profesional
-                melayani cuci AC, perbaikan, bongkar pasang,
+                Kami adalah penyedia jasa service AC dan instalasi listrik profesional
+                melayani cuci AC, perbaikan ac atau listrik , bongkar pasang,
                 isi freon serta perawatan AC rumah maupun kantor.
             </p>
 
@@ -214,33 +198,32 @@
 </section>
 
 
-<section class="contact reveal">
+<section class="contact reveal" id="kontak">
 
     <div class="container">
 
-        <h2>ANY QUESTIONS?</h2>
+        <h2>Ada pertanyaan ?</h2>
 
         <div class="contact-content">
 
-            <form>
+            <form id="contactForm">
 
-                <input  type="text" placeholder="Your Name">
+    <input type="text" id="formName" placeholder="Nama kamu" required>
 
-                <input  type="text" placeholder="Phone Number">
+    <input type="text" id="formPhone" placeholder="Nomer Telpon" required>
 
-                <textarea  placeholder="Your Question"></textarea>
+    <textarea id="formMessage" placeholder="Pertanyaan atau keluhan anda" required></textarea>
 
-                <button type="submit">Send</button>
+    <button type="submit">Send</button>
 
-            </form>
-
+</form>
             <div class="contact-text">
 
                 <p>
                     Hubungi kami kapan saja.
                     Tim kami siap membantu
                     memberikan solusi terbaik
-                    untuk kebutuhan AC Anda.
+                    untuk kebutuhan Anda.
                 </p>
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d294.8379233789885!2d106.92131033596489!3d-6.150777753993431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698bbe246f1fbd%3A0x5e800eb0abc30a0d!2sRyora%20Cloth!5e0!3m2!1sid!2sid!4v1785817799244!5m2!1sid!2sid"
@@ -258,7 +241,7 @@
 </section>
 
 
-<footer class="footer reveal">
+<footer class="footer reveal" id="footer">
 
     <div class="container footer">
 

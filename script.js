@@ -38,3 +38,22 @@ if (hamburger && navbarContent) {
         navbarContent.classList.toggle("show");
     };
 }
+
+const contactForm = document.querySelector("#contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = document.querySelector("#formName").value;
+        const phone = document.querySelector("#formPhone").value;
+        const message = document.querySelector("#formMessage").value;
+
+        const waNumber = "6285774272466"; 
+        const text = `Halo, saya ${name} (${phone}).\n\n${message}`;
+
+        window.open(`https://wa.me/${6285774272466}?text=${encodeURIComponent(text)}`, "_blank");
+
+        contactForm.reset();
+    });
+}
